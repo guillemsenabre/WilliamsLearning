@@ -3,7 +3,7 @@ from app.blueprints.main.routes import main_bp
 
 def create_app():
 
-	# App creation
+	# App creation	
 	app = Flask(__name__)
 
 	# Register Blueprints if needed
