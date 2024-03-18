@@ -1,13 +1,22 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   min-height: 100vh;
 }
 
 .mainHeader {
+  display: flex;
   height: 10vh;
+  width: 100%;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+}
+
+.mainHeader h3 {
+  margin-left: 5vw;
+  margin-right: 5vw;
 }
 
 .code {
