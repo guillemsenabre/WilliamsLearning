@@ -8,10 +8,13 @@
 .mainHeader {
   display: flex;
   height: 10vh;
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   justify-content: space-between;
   text-align: center;
   align-items: center;
+  border-bottom: 1px solid white;
+  margin-bottom: 5vh;
 }
 
 .mainHeader h3 {
@@ -25,6 +28,7 @@
 }
 
 .grid {
+  margin: 0;
   display: grid;
   grid-template-columns: repeat(4, minmax(25%, auto));
   max-width: 100%;
@@ -58,16 +62,14 @@
   text-wrap: balance;
 }
 
-/* Enable hover only on non-touch devices */
-@media (hover: hover) and (pointer: fine) {
-  .card:hover {
-    background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
-  }
 
-  .card:hover span {
-    transform: translateX(4px);
-  }
+.card:hover {
+  background: rgba(var(--card-rgb), 0.1);
+  border: 1px solid rgba(var(--card-border-rgb), 0.15);
+}
+
+.card:hover span {
+  transform: translateX(4px);
 }
 
 /* Removes span transform transition*/
