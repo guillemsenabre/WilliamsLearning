@@ -1,34 +1,49 @@
-:root {
-  --border-radius: 12px;
+/* 
+  This section defines global CSS variables used throughout the styles. 
+  Commenting them out will disable these variables and potentially affect 
+  other styles that rely on them.
+*/
 
-  --callout-rgb: 238, 240, 241;
-  --callout-border-rgb: 172, 175, 176;
-  --foreground-rgb: 255, 255, 255;
-  --background-start-rgb: 0, 0, 0;
-  --background-end-rgb: 0, 0, 0;
-  --card-rgb: 100, 100, 100;
-  --card-border-rgb: 200, 200, 200;
+:root {
+  --border-radius: 12px; /* Default border radius for elements */
+
+  --foreground-rgb: 255, 255, 255; /* Text color (white) */
+  --card-rgb: 100, 100, 100; /* Background color for card elements */
+  --card-border-rgb: 200, 200, 200; /* Border color for card elements */
+
+  --background-black-hex: #000000;
+  --background-darker-hex: #0c0c0cff;
+  --background-dark-hex: #131313ff;
+  --eerie-black: #171717ff;
+  --eerie-black-2: #222222ff;
+  --jet: #2c2c2cff;
 }
 
+/* 
+  This section resets default styles for all elements using the universal selector "*". 
+  Commenting it out will prevent these resets and potentially lead to inconsistencies 
+  due to browser default styles.
+*/
+
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  box-sizing: border-box; /* Ensures padding/border are included in width/height */
+  padding: 0; /* Resets default padding */
+  margin: 0; /* Resets default margin */
 }
 
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+  max-width: 100vw; /* Sets maximum width to viewport width */
+  overflow-x: hidden; /* Hides horizontal scrollbar if content overflows */
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-start-rgb));
+  color: rgb(var(--foreground-rgb)); /* Sets text color using --foreground-rgb variable */
+  background: var(--background-black-hex); /* Sets background color using --background-start-rgb variable */
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+  color: inherit; /* Inherits text color from its parent element */
+  text-decoration: none; /* Removes default underline decoration from links */
 }
