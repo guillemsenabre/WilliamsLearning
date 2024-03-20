@@ -1,5 +1,4 @@
-import styles from "../../../styles/page.module.css"
-import MainHeader from "../components/header";
+import MainHeader from "@/app/components/header";
 
 const Maths: React.FC = () => {
   return (
