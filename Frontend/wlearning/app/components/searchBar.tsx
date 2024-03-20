@@ -1,5 +1,6 @@
 import styles from "@/styles/page.module.css"
 
+// Client Components, allows the use of handlers and hooks
 'use client';
 const SearchBar: React.FC = () => {
   function handleSearch(term: string) {
