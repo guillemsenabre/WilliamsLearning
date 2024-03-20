@@ -6,7 +6,7 @@ let cardData = [
     field: "Mathematics",
     description:
       "Mathematics is the abstract science of numbers, quantity, and space. It is a fundamental tool used in many fields of study, including physics, engineering, computer science, economics, and finance. Mathematics provides a language for describing relationships, patterns, and structures in the world around us.  Through the study of mathematics, we develop critical thinking skills, problem-solving abilities, and the ability to analyze complex systems.",
-    link: "/math", // Adjust route based on your setup
+    link: "/mathematics", // Adjust route based on your setup
   },
   {
     field: "Physics",
