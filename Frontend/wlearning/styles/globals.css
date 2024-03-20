@@ -7,7 +7,7 @@
 :root {
   --border-radius: 12px; /* Default border radius for elements */
 
-  --foreground-rgb: 255, 255, 255; /* Text color (white) */
+  --foreground-hex: #ffffff; /* Text color (white) */
   --card-rgb: 100, 100, 100; /* Background color for card elements */
   --card-border-rgb: 200, 200, 200; /* Border color for card elements */
 
@@ -39,7 +39,7 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb)); /* Sets text color using --foreground-rgb variable */
+  color: var(--foreground-hex); /* Sets text color using --foreground-rgb variable */
   background: var(--background-black-hex); /* Sets background color using --background-start-rgb variable */
 }
 

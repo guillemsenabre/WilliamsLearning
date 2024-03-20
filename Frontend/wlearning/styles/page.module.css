@@ -25,13 +25,13 @@
 .searchBar {
   width: 30vw;
   outline: none;
-  border: none;
+  border: 1px solid white;
   border-radius: 1vh;
   font-size: 2.5vh;
+  color: var(--foreground-rgb);
   height: 5vh;
-  background-color: rgb(var(--card-border-rgb));
+  background-color: var(--background-black-hex);
   padding-inline: 1vw;
-
 }
 
 
