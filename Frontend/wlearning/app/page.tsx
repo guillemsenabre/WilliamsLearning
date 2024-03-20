@@ -1,4 +1,4 @@
-import styles from "../styles/page.module.css"
+import styles from "@/styles/page.module.css"
 import MainBodyContainer from "./containers/mainBodyContainer";
 import MainHeader from "./components/header";
 

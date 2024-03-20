@@ -1,5 +1,5 @@
-import styles from "../../styles/page.module.css"
-import Card from "../components/card";
+import styles from "@/styles/page.module.css"
+import Card from "@/app/components/card";
 
 let cardData = [
   {
