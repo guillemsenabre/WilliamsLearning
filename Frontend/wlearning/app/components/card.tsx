@@ -1,4 +1,5 @@
 import styles from "../../styles/page.module.css"
+import Link from 'next/link'
 
 interface CardProps {
   field: string;
@@ -8,12 +9,12 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ field, description, link}) => {
   return (
-    <a href={ link } className={styles.card}>
+  <Link href={ link } className={styles.card}>
     <h2>
       { field } <span>-&gt;</span>
     </h2>
     <p>{ description }</p>
-  </a>
+  </Link>
   );
 }
 
