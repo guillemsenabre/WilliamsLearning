@@ -6,7 +6,7 @@
 // -> Caching: nextjs can cache this data (improves performance when displaying it on other views)
 
 export async function getStaticProps() {
-  const response = await fetch('/app/data/cardData.json') // Retrieve the data from the json file
+  const response = await fetch('../data/cardData.json') // Retrieve the data from the json file
   const cardData = await response.json() // parse the json file
 
   return {
