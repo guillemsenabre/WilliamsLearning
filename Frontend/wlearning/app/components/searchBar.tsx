@@ -28,9 +28,23 @@ const SearchBar: React.FC = () => {
     setShowHints(true);
   }
 
+  /*NOTE - 
+  Cheks if user input is not null, if it's not, filters and compares
+  the input. If it is null, assigns null to filteredFields.
+  */
   const filteredFields = cardData.filter((card) =>
-    card.field.toLowerCase().startsWith(searchTerm.toLowerCase())
+    searchTerm ? 
+    card.field.toLowerCase()?.startsWith(searchTerm.toLowerCase()) :
+    false
   );
+
+  /*NOTE - Alternative approach
+
+  const filteredFields = cardData.filter((card) =>
+    searchTermcard.field.toLowerCase()?.startsWith(searchTerm.toLowerCase())
+  );
+
+  */
 
   return (
     <div>

@@ -28,5 +28,10 @@
     "description":
       "Biology is the study of living organisms, their structure, function, growth, origin, evolution, and distribution. It is a broad field that encompasses a wide range of sub-disciplines, including botany, zoology, microbiology, genetics, and biochemistry.",
     "link": "/biology"
+  },
+  {
+  "field": "Materials",
+  "description": "Materials science is the study of the properties of matter and how these properties are used to design new materials with specific functions. It encompasses a wide range of materials, from metals and ceramics to polymers and composites. Materials science plays a crucial role in many fields, including engineering, medicine, and energy.",
+  "link": "/materials"
   }
 ]
