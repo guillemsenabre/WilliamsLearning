@@ -2,6 +2,7 @@
 'use client';
 
 import styles from "@/styles/page.module.css"
+import cardData from "@/app/data/cardData.json"
 
 const SearchBar: React.FC = () => {
   function handleSearch(term: string) {
@@ -20,5 +21,7 @@ const SearchBar: React.FC = () => {
     </div>
   );
 }
+
+
 
 export default SearchBar;
