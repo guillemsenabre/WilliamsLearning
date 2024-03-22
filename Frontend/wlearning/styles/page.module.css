@@ -85,11 +85,15 @@
 
 /*!SECTION */
 
+
+/*
 .code {
   font-weight: 700;
   font-family: var(--font-mono);
 }
+*/
 
+/*SECTION - Card container template */
 .grid {
   margin: 0;
   display: grid;
@@ -97,6 +101,10 @@
   max-width: 100%;
   width: var(--max-width);
 }
+
+
+
+/*SECTION - Card styles */
 
 .card {
   padding: 1rem 1.2rem;
@@ -142,3 +150,5 @@
     transform: none;
   }
 }
+
+/*!SECTION */
