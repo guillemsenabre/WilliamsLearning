@@ -85,7 +85,11 @@ const SearchBar: React.FC = () => {
         />
         <ul className="suggestions-list">
           {filteredFields.map((field) => (
-            <li key={field.field}>{field.field}</li> // Assuming each field has an id
+            <li key={field.field}>
+              <button type="button" onClick={() => setSearchTerm(field.field)}>
+                {field.field}
+              </button>
+            </li>
           ))}
         </ul>
       </div>
