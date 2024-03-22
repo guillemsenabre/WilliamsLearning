@@ -83,7 +83,7 @@ const SearchBar: React.FC = () => {
             handleSearchTerm(e.target.value);
           }}
         />
-        <ul className="suggestions-list">
+        <ul className={styles.suggestionsList}>
           {filteredFields.map((field) => (
             <li key={field.field}>
               <button type="button" onClick={() => setSearchTerm(field.field)}>

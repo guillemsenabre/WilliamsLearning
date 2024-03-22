@@ -5,6 +5,8 @@
   min-height: 100vh;
 }
 
+/*SECTION - Header styles */
+
 .mainHeader {
   display: flex;
   height: 10vh;
@@ -22,6 +24,10 @@
   margin-right: 5vw;
 }
 
+/*!SECTION */
+
+/*SECTION - Search Bar styles */
+
 .searchBar {
   width: 30vw;
   outline: none;
@@ -34,6 +40,43 @@
   padding-inline: 1vw;
 }
 
+/* styles.css */
+.searchContainer {
+  position: relative; /* Allow positioning the suggestions list */
+}
+
+
+.suggestionsList {
+  position: absolute;
+  list-style: none;
+  width: 30vw;
+  margin: 0;
+  padding: 0;
+  color: rgba(var(--foreground-rgb));
+  background-color: var(--background-black-hex);
+  z-index:1; /*Ensures the list appears above other elements*/
+}
+
+/*
+.suggestionsList li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.suggestionsList button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+}
+
+.suggestionsList button:hover {
+  background-color: #eee; /* Optional hover effect */
+/*}
+
+*/
+/*!SECTION */
 
 .code {
   font-weight: 700;
