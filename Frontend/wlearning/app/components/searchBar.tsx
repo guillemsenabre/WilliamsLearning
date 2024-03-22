@@ -5,16 +5,15 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 
 import styles from "@/styles/page.module.css"
-//import cardData from "@/app/data/cardData.json"
+import cardData from "@/app/data/cardData.json"
 
-// Tsx Blueprint for cardData
-/*
+// TypeScript Blueprint for cardData
+
 interface CardData {
   field: string,
   description: string, 
   link?: string
 }
-*/
 
 const SearchBar: React.FC = () => {
   /*
@@ -34,16 +33,18 @@ const SearchBar: React.FC = () => {
     //setShowHints(true);
   }
 
-  /*NOTE - 
+  /*NOTE - DROPDOWN FILTERING LOGIC
+
   Cheks if user input is not null, if it's not, filters and compares
   the input. If it is null, assigns null to filteredFields.
-  
+  */
+
   const filteredFields = cardData.filter((card) =>
     searchTerm ? 
     card.field.toLowerCase()?.startsWith(searchTerm.toLowerCase()) :
     false
   );
-  */
+
   /*NOTE - Alternative approach
 
   const filteredFields = cardData.filter((card) =>
@@ -72,6 +73,11 @@ const SearchBar: React.FC = () => {
             handleSearchTerm(e.target.value);
           }}
         />
+        <ul className="suggestions-list">
+          {filteredFields.map((field) => (
+            <li key={field.field}>{field.field}</li> // Assuming each field has an id
+          ))}
+        </ul>
       </div>
     </form>
   );
