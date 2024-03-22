@@ -66,6 +66,8 @@
 }
 
 .suggestionsList button {
+  width: 100%;
+  height: 100%;
   color: rgba(var(--foreground-rgb));
   border: none;
   background-color: transparent;
@@ -74,12 +76,11 @@
   text-align: left;
 }
 
-/*
 .suggestionsList button:hover {
-  background-color: #eee; /* Optional hover effect */
-/*}
+  background-color: rgba(var(--card-rgb)); /* Optional hover effect */
+}
 
-*/
+
 /*!SECTION */
 
 .code {

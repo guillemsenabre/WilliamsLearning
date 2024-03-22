@@ -1,8 +1,6 @@
 //NOTE - Client Components, allows the use of handlers and hooks
 'use client';
 
-//SECTION - Imports
-
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 
@@ -21,14 +19,10 @@ interface CardData {
 
 const SearchBar: React.FC = () => {
 
-  //SECTION - Declaration of variables and states
 
   const [searchTerm, setSearchTerm] = useState("");
   const router = useRouter();
 
-  //!SECTION
-
-  //SECTION - Declaration of constant arrow functions
 
   /*NOTE - DROPDOWN FILTERING LOGIC
 
@@ -55,18 +49,12 @@ const SearchBar: React.FC = () => {
     router.push(`/${searchTerm}`);
   }
 
-  //!SECTION
-
-  //SECTION - Declaration of methods and other functions
 
   function handleSearchTerm(term: string) {
-    setSearchTerm(term);
+    let lower_term : string = term.toLowerCase();
+    setSearchTerm(lower_term);
     //setShowHints(true);
   }
-
-  //!SECTION
-
-  //SECTION - JSX
 
   return (
     <form 
@@ -86,8 +74,9 @@ const SearchBar: React.FC = () => {
         <ul className={styles.suggestionsList}>
           {filteredFields.map((field) => (
             <li key={field.field}>
-              <button type="button" onClick={() => setSearchTerm(field.field)}>
-                {field.field}
+              <button type="button" onClick={() => 
+                setSearchTerm(field.field)}>
+                  {field.field}
               </button>
             </li>
           ))}
@@ -96,9 +85,6 @@ const SearchBar: React.FC = () => {
     </form>
   );
 }
-
-//!SECTION
-
 
 
 export default SearchBar;
