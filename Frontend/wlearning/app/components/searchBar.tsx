@@ -44,24 +44,30 @@ const SearchBar: React.FC = () => {
 
   */
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  function handleFormSubmission() {
     router.push(`/${inputValue}`);
   }
 
+  function handleSuggestionSubmission(term: string) {
+    router.push(`/${term}`);
+  }
 
   function handleSearchTerm(term: string) {
-    setSearchTerm(term)
-    let lower_term : string = term.toLowerCase();
-    setInputValue(lower_term);
-    //setShowHints(true);
+    //NOTE - WHY 2 STATES??
+
+    // used to display literal user_input (keeping uppercases)
+    setSearchTerm(term) 
+
+    // Used to submit the value and match the corresponding route
+    setInputValue(term.toLowerCase());
   }
 
 
   return (
     <form 
       onSubmit={(e) => {
-        handleSubmit(e)
+        e.preventDefault();
+        handleFormSubmission()
       }}
     >
       <div>
@@ -76,8 +82,9 @@ const SearchBar: React.FC = () => {
         <ul className={styles.suggestionsList}>
           {filteredFields.map((field) => (
             <li key={field.field}>
-              <button type="button" onClick={() => 
-                setSearchTerm(field.field)}>
+              <button type="button" onClick={() => { 
+                handleSuggestionSubmission(field.field.toLowerCase());
+              }}>
                   {field.field}
               </button>
             </li>
