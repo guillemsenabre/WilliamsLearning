@@ -7,7 +7,6 @@ import { useRouter } from 'next/navigation'
 import styles from "@/styles/page.module.css"
 import cardData from "@/app/data/cardData.json"
 
-//!SECTION
 
 //NOTE - TypeScript Blueprint for cardData
 
@@ -19,8 +18,9 @@ interface CardData {
 
 const SearchBar: React.FC = () => {
 
-
+  // Hooks and states
   const [searchTerm, setSearchTerm] = useState("");
+  const [inputValue, setInputValue] = useState("");
   const router = useRouter();
 
 
@@ -46,15 +46,17 @@ const SearchBar: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    router.push(`/${searchTerm}`);
+    router.push(`/${inputValue}`);
   }
 
 
   function handleSearchTerm(term: string) {
+    setSearchTerm(term)
     let lower_term : string = term.toLowerCase();
-    setSearchTerm(lower_term);
+    setInputValue(lower_term);
     //setShowHints(true);
   }
+
 
   return (
     <form 
