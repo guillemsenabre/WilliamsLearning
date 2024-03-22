@@ -47,7 +47,13 @@ const SearchBar: React.FC = () => {
 
   //TODO - INPUT ERROR/MISSING VALUE HANDLING
   function handleFormSubmission() {
-    router.push(`/${inputValue}`);
+    console.log(filteredFields);
+
+    const matchField = filteredFields.find((field) => field.field.toLowerCase() == inputValue);
+
+    if (matchField) {
+      router.push(`/${inputValue}`);
+    }
   }
 
   function handleSuggestionSubmission(term: string) {
@@ -55,7 +61,7 @@ const SearchBar: React.FC = () => {
   }
 
   function handleSearchTerm(term: string) {
-    //NOTE - WHY 2 STATES??
+    //NOTE - WHY 2 STATES --> Separation of concerns
 
     // used to display literal user_input (keeping uppercases)
     setSearchTerm(term) 
