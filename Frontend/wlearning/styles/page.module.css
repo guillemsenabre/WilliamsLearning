@@ -57,11 +57,15 @@
   z-index:1; /*Ensures the list appears above other elements*/
 }
 
-/*
+
 .suggestionsList li {
   padding: 5px 10px;
   cursor: pointer;
+  border: solid white 1px;
+  border-radius: 1vh;
 }
+
+/*
 
 .suggestionsList button {
   border: none;
