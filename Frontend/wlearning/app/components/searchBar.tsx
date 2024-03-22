@@ -44,6 +44,8 @@ const SearchBar: React.FC = () => {
 
   */
 
+
+  //TODO - INPUT ERROR/MISSING VALUE HANDLING
   function handleFormSubmission() {
     router.push(`/${inputValue}`);
   }
