@@ -52,7 +52,6 @@
   width: 30vw;
   margin: 0;
   padding: 0;
-  color: rgba(var(--foreground-rgb));
   background-color: var(--background-black-hex);
   z-index:1; /*Ensures the list appears above other elements*/
 }
@@ -62,12 +61,12 @@
   padding: 5px 10px;
   cursor: pointer;
   border: solid white 1px;
+  border-top: none;
   border-radius: 1vh;
 }
 
-/*
-
 .suggestionsList button {
+  color: rgba(var(--foreground-rgb));
   border: none;
   background-color: transparent;
   padding: 0;
@@ -75,6 +74,7 @@
   text-align: left;
 }
 
+/*
 .suggestionsList button:hover {
   background-color: #eee; /* Optional hover effect */
 /*}
