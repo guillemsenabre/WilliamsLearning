@@ -1,5 +1,7 @@
-// Client Components, allows the use of handlers and hooks
+//NOTE - Client Components, allows the use of handlers and hooks
 'use client';
+
+//SECTION - Imports
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
@@ -7,7 +9,9 @@ import { useRouter } from 'next/navigation'
 import styles from "@/styles/page.module.css"
 import cardData from "@/app/data/cardData.json"
 
-// TypeScript Blueprint for cardData
+//!SECTION
+
+//NOTE - TypeScript Blueprint for cardData
 
 interface CardData {
   field: string,
@@ -16,33 +20,26 @@ interface CardData {
 }
 
 const SearchBar: React.FC = () => {
-  /*
-  function handleSearch(term: string) {
-    console.log(term);
-  }
-  */
+
+  //SECTION - Declaration of variables and states
 
   const [searchTerm, setSearchTerm] = useState("");
-
   const router = useRouter();
-  
-  //const [showHints, setShowHints] = useState(false);
 
-  function handleSearchTerm(term: string) {
-    setSearchTerm(term);
-    //setShowHints(true);
-  }
+  //!SECTION
+
+  //SECTION - Declaration of constant arrow functions
 
   /*NOTE - DROPDOWN FILTERING LOGIC
 
   Cheks if user input is not null, if it's not, filters and compares
-  the input. If it is null, assigns null to filteredFields.
+  the input. If it is null/none, assigns null/false to filteredFields.
   */
 
   const filteredFields = cardData.filter((card) =>
     searchTerm ? 
     card.field.toLowerCase()?.startsWith(searchTerm.toLowerCase()) :
-    false
+    false //could also be assigned to bool "false"
   );
 
   /*NOTE - Alternative approach
@@ -57,6 +54,19 @@ const SearchBar: React.FC = () => {
     e.preventDefault();
     router.push(`/${searchTerm}`);
   }
+
+  //!SECTION
+
+  //SECTION - Declaration of methods and other functions
+
+  function handleSearchTerm(term: string) {
+    setSearchTerm(term);
+    //setShowHints(true);
+  }
+
+  //!SECTION
+
+  //SECTION - JSX
 
   return (
     <form 
@@ -82,6 +92,8 @@ const SearchBar: React.FC = () => {
     </form>
   );
 }
+
+//!SECTION
 
 
 
