@@ -49,6 +49,7 @@ const SearchBar: React.FC = () => {
   function handleFormSubmission() {
     console.log(filteredFields);
 
+    // looks if inputData is a field in cardData
     const matchField = filteredFields.find((field) => field.field.toLowerCase() == inputValue);
 
     if (matchField) {
