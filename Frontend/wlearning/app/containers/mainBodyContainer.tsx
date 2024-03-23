@@ -1,5 +1,5 @@
 import styles from "@/styles/page.module.css"
-import Card from "@/app/components/card";
+import Card from "@/app/containers/card";
 import cardData from "@/app/data/cardData.json"
 
 
