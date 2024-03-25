@@ -11,7 +11,12 @@ interface CardProps {
 const Card: React.FC<CardProps> = ({ index, field, description, link}) => {
   return (
     <div className={styles.card}>
-      <Link href={ `${ link }?index=${index}` }>  
+      <Link 
+        href={{ 
+          pathname: `${link}`,
+          query: {index: `${index}`}
+          }}
+        >  
         <h2>
           { field } <span>-&gt;</span>
         </h2>
