@@ -9,12 +9,14 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ field, description, link}) => {
   return (
-  <Link href={ link } className={styles.card}>
-    <h2>
-      { field } <span>-&gt;</span>
-    </h2>
-    <p>{ description }</p>
-  </Link>
+    <div className={styles.card}>
+      <Link href={ link }>
+        <h2>
+          { field } <span>-&gt;</span>
+        </h2>
+        <p>{ description }</p>
+      </Link>
+    </div>
   );
 }
 
