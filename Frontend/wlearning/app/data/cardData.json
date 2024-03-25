@@ -1,164 +1,50 @@
 [
   {
-    "index": 0,
+    "index": "0",
     "field": "Mathematics",
     "description": "Mathematics is the abstract science of numbers, quantity, and space. It is a fundamental tool used in many fields of study, including physics, engineering, computer science, economics, and finance.",
     "link": "/mathematics"
   },
   {
-    "index": 1,
+    "index": "1",
     "field": "Physics",
     "description": "Physics is the fundamental science that studies matter, energy, and their interactions. It is one of the oldest disciplines, and its discoveries have played a crucial role in shaping our understanding of the universe.",
     "link": "/physics"
   },
   {
-    "index": 2,
+    "index": "2",
     "field": "Computer Science",
     "description": "Computer science is the study of computers and computation. It encompasses a wide range of topics, from the design of hardware and software to the theory of algorithms and artificial intelligence.",
     "link": "/computer-science"
   },
   {
-    "index": 3,
+    "index": "3",
     "field": "Electronics",
     "description": "Electronics is the branch of engineering that deals with the design, development, and application of electronic circuits, devices, and systems. It involves the study of electricity, electromagnetism, and the flow of electrons in various materials.",
     "link": "/electronics"
   },
   {
-    "index": 4,
+    "index": "4",
     "field": "Biology",
     "description": "Biology is the study of living organisms, their structure, function, growth, origin, evolution, and distribution. It is a broad field that encompasses a wide range of sub-disciplines, including botany, zoology, microbiology, genetics, and biochemistry.",
     "link": "/biology"
   },
   {
-    "index": 5,
+    "index": "5",
     "field": "Materials",
     "description": "Materials science is the study of the properties of matter and how these properties are used to design new materials with specific functions.",
     "link": "/materials"
   },
   {
-    "index": 6,
+    "index": "6",
     "field": "Chemistry",
     "description": "Chemistry is the study of matter, its properties, composition, and reactions.",
     "link": "/chemistry"
   },
   {
-    "index": 7,
+    "index": "7",
     "field": "Geology",
     "description": "Geology is the study of the Earth, its composition, structure, and processes.",
     "link": "/geology"
-  },
-  {
-    "index": 8,
-    "field": "Astronomy",
-    "description": "Astronomy is the study of celestial objects, such as stars, planets, comets, and galaxies, and the phenomena that occur outside Earth's atmosphere.",
-    "link": "/astronomy"
-  },
-  {
-    "index": 9,
-    "field": "Psychology",
-    "description": "Psychology is the scientific study of the mind and behavior.",
-    "link": "/psychology"
-  },
-  {
-    "index": 10,
-    "field": "Sociology",
-    "description": "Sociology is the study of society, social relationships, and human behavior.",
-    "link": "/sociology"
-  },
-  {
-    "index": 11,
-    "field": "Anthropology",
-    "description": "Anthropology is the study of humans, their origins, societies, and cultures.",
-    "link": "/anthropology"
-  },
-  {
-    "index": 12,
-    "field": "Linguistics",
-    "description": "Linguistics is the scientific study of language and its structure.",
-    "link": "/linguistics"
-  },
-  {
-    "index": 13,
-    "field": "History",
-    "description": "History is the study of past events, particularly in human affairs.",
-    "link": "/history"
-  },
-  {
-    "index": 14,
-    "field": "Political Science",
-    "description": "Political science is the study of government, political processes, and political behavior.",
-    "link": "/political-science"
-  },
-  {
-    "index": 15,
-    "field": "Economics",
-    "description": "Economics is the study of how individuals, businesses, and societies allocate resources to satisfy their needs and wants.",
-    "link": "/economics"
-  },
-  {
-    "index": 16,
-    "field": "Literature",
-    "description": "Literature is written works, especially those considered of superior or lasting artistic merit.",
-    "link": "/literature"
-  },
-  {
-    "index": 17,
-    "field": "Philosophy",
-    "description": "Philosophy is the study of fundamental questions about existence, knowledge, values, reason, mind, and language.",
-    "link": "/philosophy"
-  },
-  {
-    "index": 18,
-    "field": "Fine Arts",
-    "description": "Fine arts are creative expressions, such as painting, sculpture, music, literature, and dance, that are primarily valued for their aesthetic appeal.",
-    "link": "/fine-arts"
-  },
-  {
-    "index": 19,
-    "field": "Environmental Science",
-    "description": "Environmental science is the study of the environment and how organisms interact with it.",
-    "link": "/environmental-science"
-  },
-  {
-    "index": 20,
-    "field": "Architecture",
-    "description": "Architecture is the art and science of designing and constructing buildings and other physical structures.",
-    "link": "/architecture"
-  },
-  {
-    "index": 21,
-    "field": "Nutrition",
-    "description": "Nutrition is the study of how food and drink affects our bodies and health.",
-    "link": "/nutrition"
-  },
-  {
-    "index": 22,
-    "field": "Medicine",
-    "description": "Medicine is the science and practice of diagnosing, treating, and preventing disease.",
-    "link": "/medicine"
-  },
-  {
-    "index": 23,
-    "field": "Engineering",
-    "description": "Engineering is the application of scientific principles to design and build machines, structures, and systems that solve problems and improve the quality of life.",
-    "link": "/engineering"
-  },
-  {
-    "index": 24,
-    "field": "Astrophysics",
-    "description": "Astrophysics is the branch of astronomy that deals with the physics of celestial objects and phenomena.",
-    "link": "/astrophysics"
-  },
-  {
-    "index": 25,
-    "field": "Statistics",
-    "description": "Statistics is the mathematical science of collecting, analyzing, interpreting, and presenting data.",
-    "link": "/statistics"
-  },
-  {
-    "index": 26,
-    "field": "Artificial Intelligence",
-    "description": "Artificial intelligence is the simulation of human intelligence processes by machines, especially computer systems.",
-    "link": "/artificial-intelligence"
   }
 ]

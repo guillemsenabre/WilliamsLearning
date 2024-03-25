@@ -2,7 +2,7 @@ import styles from "@/styles/page.module.css"
 import Link from 'next/link'
 
 interface CardProps {
-  index: number;
+  index: string;
   field: string;
   description: string;
   link: string;

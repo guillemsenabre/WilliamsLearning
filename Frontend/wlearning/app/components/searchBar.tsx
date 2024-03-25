@@ -11,6 +11,7 @@ import cardData from "@/app/data/cardData.json"
 //NOTE - TypeScript Blueprint for cardData
 
 interface CardData {
+  index?: string,
   field: string,
   description: string, 
   link?: string
