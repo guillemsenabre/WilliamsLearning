@@ -176,6 +176,16 @@
 .fieldMenu h1,
 .fieldMain h1 {
   text-align: center;
+  margin-top: 2vh;
+}
+
+.fieldMain h2 {
+  text-align: center;
+}
+
+.fieldMain p {
+  line-height: 5vh;
+  /*line-height: 40px;*/
 }
 
 
