@@ -7,7 +7,7 @@ const MainBodyContainer: React.FC = () => {
   return (
     <div className={styles.grid}>
       {cardData.map((card) => (
-        <Card key={card.field} {...card} /> //NOTE - card.field is the identifier, then all props are unpacked.
+        <Card key={card.index} {...card} /> //NOTE - card.field is the identifier, then all props are unpacked.
       ))}
     </div>
   );
