@@ -17,14 +17,8 @@ const Maths: React.FC = () => {
   // getParams is old router.query
   const searchParams = useSearchParams()
 
-
   // Get query property "index" using non-null assertion operator "!".
   const index: string = searchParams.get('index')!;
-
-  // Handle missing index
-  if (!index) {
-    console.error('error: Index does not match any object')
-  }
 
   // Search field that matches index n. "as FieldData" is used to cast the FieldData type
   const mathData = cardData?.find(item => item.index == index) as FieldData;
