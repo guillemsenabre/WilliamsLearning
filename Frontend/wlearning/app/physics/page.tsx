@@ -4,7 +4,6 @@ import MainHeader from "@/app/components/header";
 import FieldContainer from "@/app/containers/fieldContainer";
 import { getProperties } from "../scripts/getProperties";
 
-
 const Physics: React.FC = () => {
 
   // using getProperties method to retrieve fieldData
