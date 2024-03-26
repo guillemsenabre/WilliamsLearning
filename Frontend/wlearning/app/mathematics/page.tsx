@@ -18,17 +18,16 @@ const Maths: React.FC = () => {
   const searchParams = useSearchParams()
 
 
-  // Get query property "index"
-  const index: string | null = searchParams.get('index')
+  // Get query property "index" using non-null assertion operator "!".
+  const index: string = searchParams.get('index')!;
 
   // Handle missing index
   if (!index) {
     console.error('error: Index does not match any object')
-    return null;
   }
 
-  // Search field that matches index n
-  const mathData: FieldData | undefined = cardData?.find(item => item.index == index)
+  // Search field that matches index n. "as FieldData" is used to cast the FieldData type
+  const mathData = cardData?.find(item => item.index == index) as FieldData;
 
   // Using optional chaining to retrieve data from mathData as it may be undefined (unlikely)
   const field = mathData?.field;
@@ -37,7 +36,7 @@ const Maths: React.FC = () => {
   return (
     <main>
       <MainHeader/>
-      <FieldContainer/>
+      <FieldContainer field={field} description={description} />
     </main>
   );
 }
