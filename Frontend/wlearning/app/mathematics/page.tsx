@@ -3,6 +3,7 @@
 import MainHeader from "@/app/components/header";
 import FieldContainer from "@/app/containers/fieldContainer";
 import { getProperties } from "../scripts/getProperties";
+import { Suspense } from "react";
 
 const Maths: React.FC = () => {
   
@@ -14,10 +15,12 @@ const Maths: React.FC = () => {
   const description = mathData?.description;
 
   return (
-    <main>
-      <MainHeader/>
-      <FieldContainer field={field} description={description} />
-    </main>
+    <Suspense>
+      <main>
+        <MainHeader/>
+        <FieldContainer field={field} description={description} />
+      </main>
+    </Suspense>
   );
 }
 

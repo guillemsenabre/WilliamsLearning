@@ -188,4 +188,13 @@
   /*line-height: 40px;*/
 }
 
+.fieldSection {
+  border-radius: 5px;
+  border: 1px solid white;
+}
+
+.editBtn {
+  display: flex;
+  justify-content: right;
+}
 
