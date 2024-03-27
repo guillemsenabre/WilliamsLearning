@@ -3,6 +3,7 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
+import { Suspense } from 'react';
 
 import styles from "@/styles/page.module.css"
 import cardData from "@/app/data/cardData.json"
@@ -74,6 +75,7 @@ const SearchBar: React.FC = () => {
 
 
   return (
+    <Suspense>
     <form 
       onSubmit={(e) => {
         e.preventDefault();
@@ -102,6 +104,7 @@ const SearchBar: React.FC = () => {
         </ul>
       </div>
     </form>
+    </Suspense>
   );
 }
 

@@ -15,12 +15,12 @@ const Maths: React.FC = () => {
   const description = mathData?.description;
 
   return (
+    <Suspense>
       <main>
         <MainHeader/>
-        <Suspense>
-          <FieldContainer field={field} description={description} />
-        </Suspense>
+        <FieldContainer field={field} description={description} />
       </main>
+    </Suspense>
   );
 }
 
