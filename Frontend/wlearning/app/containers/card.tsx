@@ -1,20 +1,17 @@
 import styles from "@/styles/page.module.css"
 import Link from 'next/link'
 
-interface CardProps {
-  index: string;
-  field: string;
-  description: string;
-  link: string;
-}
+import { CardData } from "@/types/interfaces";
 
-const Card: React.FC<CardProps> = ({ index, field, description, link}) => {
+
+
+const Card: React.FC<CardData> = ({ id, field, description, link}) => {
   return (
     <div className={styles.card}>
       <Link 
         href={{ 
           pathname: `${link}`,
-          query: {index: `${index}`}
+          query: {index: `${id}`}
           }}
         >  
         <h2>

@@ -16,7 +16,7 @@ const MainBodyContainer: React.FC<MainBodyContainerProps> = ({ data }) => {
   return (
     <div className={styles.grid}>
       {cardData.map((card) => (
-        <Card key={card.index} {...card} /> //NOTE - card.index is the identifier, then all props are unpacked.
+        <Card key={card.id} {...card} /> //NOTE - card.index is the identifier, then all props are unpacked.
       ))}
     </div>
   );
