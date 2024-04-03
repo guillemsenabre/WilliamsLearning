@@ -15,7 +15,7 @@ const MainHeader: React.FC<MainHeaderProps> = ( {data} ) => {
   return (
     <header className={styles.mainHeader}>
       <Link href={"/"}>
-        <h3>WilliamS Learning</h3>
+        <h3>WsL</h3>
       </Link>
       <SearchBar data = {data}/>
       <h3>Log In button</h3>
