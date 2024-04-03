@@ -2,9 +2,11 @@ import styles from "@/styles/page.module.css"
 import SearchBar from "./searchBar";
 import { CardData } from "@/types/interfaces";
 
+
 interface MainHeaderProps {
   data: CardData[];
 }
+
 const MainHeader: React.FC<MainHeaderProps> = ( {data} ) => {
   return (
     <header className={styles.mainHeader}>

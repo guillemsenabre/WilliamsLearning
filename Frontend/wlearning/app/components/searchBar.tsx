@@ -1,11 +1,11 @@
 //NOTE - Client Components, allows the use of handlers and hooks
+// Can't use backend services such as databases and more
 'use client';
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Suspense } from 'react';
 
-import { getCardData } from '@/libr/cardData';
 import { CardData } from '@/types/interfaces';
 
 import styles from "@/styles/page.module.css"
