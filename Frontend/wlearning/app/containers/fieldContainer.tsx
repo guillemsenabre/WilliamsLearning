@@ -1,9 +1,17 @@
 import styles from "@/styles/page.module.css"
 import FieldMenu from "../components/fieldMenu";
-import { useState } from "react";
+
+import { CardData } from "@/types/interfaces";
 
 
-const FieldContainer: React.FC = () => {
+interface FieldContainerProps {
+  data: CardData[];
+}
+
+const FieldContainer: React.FC<FieldContainerProps> = ({ data }) => {
+
+  const textData = data;
+  
   return (
     <div className={styles.fieldContainer}>
       <FieldMenu/>
