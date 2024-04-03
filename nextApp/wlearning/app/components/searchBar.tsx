@@ -47,7 +47,6 @@ const SearchBar: React.FC<searchBarProps> = ({ data }) => {
 
   //TODO - INPUT ERROR/MISSING VALUE HANDLING
   function handleFormSubmission() {
-    console.log(filteredFields);
 
     // looks if inputData is a field in cardData
     const matchField = filteredFields.find((field) => field.field.toLowerCase() == inputValue);
@@ -79,26 +78,30 @@ const SearchBar: React.FC<searchBarProps> = ({ data }) => {
         handleFormSubmission()
       }}
     >
-      <div>
-        <input
-          value={searchTerm}
-          className={styles.searchBar}
-          placeholder=""
-          onChange={(e) => {
-            handleSearchTerm(e.target.value);
-          }}
-        />
-        <ul className={styles.suggestionsList}>
-          {filteredFields.map((field) => (
-            <li key={field.field}>
-              <button type="button" onClick={() => { 
-                handleSuggestionSubmission(field.field.toLowerCase());
-              }}>
-                  {field.field}
-              </button>
-            </li>
-          ))}
-        </ul>
+      <div className={styles.searchContainer}>
+        <div>
+          <input
+            value={searchTerm}
+            className={styles.searchBar}
+            placeholder=""
+            onChange={(e) => {
+              handleSearchTerm(e.target.value);
+            }}
+          />
+        </div>
+        {filteredFields.length > 0 &&  (
+          <ul className={styles.suggestionsList}>
+            {filteredFields.map((field) => (
+              <li key={field.field}>
+                <button type="button" onClick={() => { 
+                  handleSuggestionSubmission(field.field.toLowerCase());
+                }}>
+                    {field.field}
+                </button>
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </form>
   );

@@ -28,39 +28,52 @@
 /*SECTION - Search Bar styles */
 
 .searchBar {
-  width: 30vw;
-  outline: none;
-  border: 1px solid white;
-  border-radius: 1vh;
-  font-size: 15px;
-  color: var(--foreground-rgb);
-  height: 25px;
-  background-color: var(--background-black-hex);
-  padding-inline: 1vw;
+  position: relative;
+  height: 7.5vh;  
+  width: 45vw;
+  outline: none; /* Removes hoverihg outline*/
+  background-color: var(--background-medium-hex);
+  color: #acb0b4;
+  font-size: 2.5vh;
+  border-radius: 6vh;
+  border: none;
+  padding: 0;
+  padding-left: 2vw;
+  box-shadow: 0vh 0vh 0vh var(--background-medium-hex);
+  z-index: 1;
+  transition:
+    background-color 0.8s,
 }
 
-/* styles.css */
+.searchBar:hover {
+  background-color: #282a2c;
+  box-shadow: 0vh 0vh .5vh var(--background-medium-hex);
+}
+
+/* 
+Relative position allows positioning the suggestions list freely
+while enabling z-index
+*/
+
 .searchContainer {
-  position: relative; /* Allow positioning the suggestions list */
+  position: relative; 
 }
-
 
 .suggestionsList {
   position: absolute;
+  top: 50%;
   list-style: none;
-  width: 30vw;
-  margin: 0;
-  padding: 0;
-  background-color: var(--background-black-hex);
-  z-index:1; /*Ensures the list appears above other elements*/
+  width: 45vw;
+  z-index: 0;
+  padding-top: 3.75vh;
+  background-color: var(--background-medium-hex);
+   /*Ensures the list appears above other elements*/
 }
-
 
 .suggestionsList li {
   width: 100%;
   height: 100%;
   cursor: pointer;
-  border: solid white 1px;
   border-top: none;
   border-radius: 1vh;
 }
