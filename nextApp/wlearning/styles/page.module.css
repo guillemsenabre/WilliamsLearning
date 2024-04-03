@@ -66,6 +66,8 @@ while enabling z-index
   width: 45vw;
   z-index: 0;
   padding-top: 3.75vh;
+  border-bottom-left-radius: 1vh;
+  border-bottom-right-radius: 1vh;
   background-color: var(--background-medium-hex);
    /*Ensures the list appears above other elements*/
 }
@@ -88,10 +90,12 @@ while enabling z-index
   background-color: transparent;
   cursor: pointer;
   text-align: left;
+  transition:
+    background-color 0.4s,
 }
 
 .suggestionsList button:hover {
-  background-color: rgba(var(--card-rgb)); /* Optional hover effect */
+  background-color: #282a2c;
 }
 
 
