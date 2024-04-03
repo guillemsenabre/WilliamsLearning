@@ -1,12 +1,27 @@
 import MainHeader from "@/app/components/header";
 import FieldContainer from "@/app/containers/fieldContainer";
 
+// Get data from sqlite3
+import { getCardData } from "@/libr/cardData";
+
+// Function to search correct field
+import { getProperties } from "../scripts/getProperties";
+
+// Interface types & data structure
+import { CardData } from "@/types/interfaces";
+
+
 const Physics: React.FC = () => {
+
+  const index : string = '2';
+  const data: CardData[] = getCardData();
+  const physicsData : CardData = getProperties({ data, index});
+
   return (
-      <main>
-        <MainHeader />
-        <FieldContainer />
-      </main>
+    <main>
+      <MainHeader data = { data }/>
+      <FieldContainer key={physicsData.id} {...physicsData}/>
+    </main>
   );
 }
 
