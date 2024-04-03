@@ -1,14 +1,19 @@
 import styles from "@/styles/page.module.css"
 import FieldMenu from "../components/fieldMenu";
 
+// Function to retrieve specific field data
+import { getProperties } from "../scripts/getProperties";
+
+// Data structure and types
 import { CardData } from "@/types/interfaces";
 
 
 interface FieldContainerProps {
   data: CardData[];
+  index: number;
 }
 
-const FieldContainer: React.FC<FieldContainerProps> = ({ data }) => {
+const FieldContainer: React.FC<FieldContainerProps> = ({ data, index }) => {
 
   const textData = data;
   
