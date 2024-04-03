@@ -8,24 +8,16 @@ import { getProperties } from "../scripts/getProperties";
 import { CardData } from "@/types/interfaces";
 
 
-interface FieldContainerProps {
-  data: CardData[];
-  index: number;
-}
-
-const FieldContainer: React.FC<FieldContainerProps> = ({ data, index }) => {
-
-  const textData = data;
-  
+const FieldContainer: React.FC<CardData> = ({ id, field, description, link }) => {  
   return (
     <div className={styles.fieldContainer}>
       <FieldMenu/>
       <div className={styles.fieldMain}>
-        <h1>Title1</h1>
+        <h1>{ field }</h1>
         <div className={styles.fieldSection}>
-          <h2>SubTitle1</h2>
+          <h2>Introduction</h2>
           <p>
-            This is a description of the Subtitle1
+            { description }
           </p>
         </div>
       </div>

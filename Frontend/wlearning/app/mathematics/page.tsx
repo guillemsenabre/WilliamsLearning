@@ -11,7 +11,7 @@ import { CardData } from "@/types/interfaces";
 
 const Maths: React.FC<CardData> = () => {
 
-  const index : number = 1;
+  const index : string = '1';
   const data: CardData[] = getCardData();
   const mathData : CardData = getProperties({ data, index});
 
