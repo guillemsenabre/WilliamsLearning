@@ -46,4 +46,5 @@ body {
 a {
   color: inherit; /* Inherits text color from its parent element */
   text-decoration: none; /* Removes default underline decoration from links */
+  cursor: pointer;
 }

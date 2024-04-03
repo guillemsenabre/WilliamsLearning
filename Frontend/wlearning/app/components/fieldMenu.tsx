@@ -1,22 +1,31 @@
+'use client';
+
 import styles from "@/styles/page.module.css"
 
-const FieldMenu = () => {
+import { FieldMenuItem } from "@/types/interfaces";
+
+
+const FieldMenu: React.FC<FieldMenuItem> = ({ title, subtitle }) => {
+  
+  // Scroll into specific view (not dynamic yet)
+  const handleScrollTo = ( id: string ) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({behavior:"smooth"});
+    }
+  };
+
   return (
     <div className={styles.fieldMenu}>
-    <h1>Index</h1>
-    <ul>
-      <li><h2>Title</h2></li>
-      <li><h3>SubTitle</h3></li>
-      <li><h3>SubTitle</h3></li>
-      <li><h3>SubTitle</h3></li>
-      <li><h3>SubTitle</h3></li>
-      <li><h4>SubTitle</h4></li>
-      <li><h2>Title</h2></li>
-      <li><h3>SubTitle</h3></li>
-      <li><h3>SubTitle</h3></li>
-      <li><h3>SubTitle</h3></li>
-      <li><h3>SubTitle</h3></li>
-    </ul>
+      <h1>Index</h1>
+      <ul>
+        <li>
+          <a onClick={() => handleScrollTo("title")}><h2>{ title }</h2></a>
+        </li>
+        <li>
+          <a onClick={() => handleScrollTo("subtitle")}><h3>{ subtitle }</h3></a>
+        </li>
+      </ul>
   </div>
   );
 }
