@@ -4,7 +4,6 @@
 
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
-import { Suspense } from 'react';
 
 import { CardData } from '@/types/interfaces';
 
@@ -74,7 +73,6 @@ const SearchBar: React.FC<searchBarProps> = ({ data }) => {
 
 
   return (
-    <Suspense>
     <form 
       onSubmit={(e) => {
         e.preventDefault();
@@ -103,7 +101,6 @@ const SearchBar: React.FC<searchBarProps> = ({ data }) => {
         </ul>
       </div>
     </form>
-    </Suspense>
   );
 }
 

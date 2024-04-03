@@ -1,5 +1,9 @@
+import Link from "next/link";
+
 import styles from "@/styles/page.module.css"
+
 import SearchBar from "./searchBar";
+
 import { CardData } from "@/types/interfaces";
 
 
@@ -10,7 +14,9 @@ interface MainHeaderProps {
 const MainHeader: React.FC<MainHeaderProps> = ( {data} ) => {
   return (
     <header className={styles.mainHeader}>
-      <h3>WilliamS Learning</h3>  
+      <Link href={"/"}>
+        <h3>WilliamS Learning</h3>
+      </Link>
       <SearchBar data = {data}/>
       <h3>Log In button</h3>
     </header>
