@@ -10,8 +10,9 @@ const Card: React.FC<CardData> = ({ id, field, description, link}) => {
     <div className={styles.card}>
       <Link 
         href={{ 
-          pathname: `${link}`,
-          query: {index: `${id}`}
+          pathname: `${link}`
+          // Alternative approach to find right field
+          //query: {index: `${id}`}
           }}
         >  
         <h2>
