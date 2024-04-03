@@ -6,19 +6,22 @@ import { useRouter } from 'next/navigation'
 import { Suspense } from 'react';
 
 import styles from "@/styles/page.module.css"
-import cardData from "@/app/data/cardData.json"
-
-
-//NOTE - TypeScript Blueprint for cardData
+import { getCardData } from '@/lib/cardData';
 
 interface CardData {
-  index?: string,
-  field: string,
-  description: string, 
-  link?: string
+  index: string;
+  field: string;
+  description: string;
+  link: string;
 }
 
-const SearchBar: React.FC = () => {
+interface searchBarProps {
+  data: CardData[];
+}
+
+const SearchBar: React.FC<searchBarProps> = ({ data }) => {
+
+  const cardData = data;
 
   // Hooks and states
   const [searchTerm, setSearchTerm] = useState("");

@@ -1,9 +1,22 @@
 import styles from "@/styles/page.module.css"
 import Card from "@/app/containers/card";
-import cardData from "@/app/data/cardData.json"
 
+interface CardData {
+  index: string;
+  field: string;
+  description: string;
+  link: string;
+}
 
-const MainBodyContainer: React.FC = () => {
+interface MainBodyContainerProps {
+  data: CardData[];
+}
+
+const MainBodyContainer: React.FC<MainBodyContainerProps> = ({ data }) => {
+
+  const cardData = data;
+
+  console.log(cardData)
   return (
     <div className={styles.grid}>
       {cardData.map((card) => (
