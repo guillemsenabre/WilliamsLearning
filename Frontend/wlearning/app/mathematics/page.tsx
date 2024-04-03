@@ -3,6 +3,8 @@ import FieldContainer from "@/app/containers/fieldContainer";
 
 // Get data from sqlite3
 import { getCardData } from "@/libr/cardData";
+
+// Function to search correct field
 import { getProperties } from "../scripts/getProperties";
 
 // Interface types & data structure
