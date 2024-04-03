@@ -4,3 +4,8 @@ export interface CardData {
   description: string;
   link: string;
 }
+
+export interface FieldMenuItem {
+  title: string;
+  subtitle?: string;
+}

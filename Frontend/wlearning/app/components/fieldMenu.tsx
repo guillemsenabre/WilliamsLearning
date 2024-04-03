@@ -3,7 +3,7 @@ import styles from "@/styles/page.module.css"
 const FieldMenu = () => {
   return (
     <div className={styles.fieldMenu}>
-    <h1>Nav list</h1>
+    <h1>Index</h1>
     <ul>
       <li><h2>Title</h2></li>
       <li><h3>SubTitle</h3></li>
