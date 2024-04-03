@@ -1,12 +1,6 @@
 import styles from "@/styles/page.module.css"
 import SearchBar from "./searchBar";
-
-interface CardData {
-  index: string;
-  field: string;
-  description: string;
-  link: string;
-}
+import { CardData } from "@/types/interfaces";
 
 interface MainHeaderProps {
   data: CardData[];

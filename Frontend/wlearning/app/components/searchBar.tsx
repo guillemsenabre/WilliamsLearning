@@ -5,15 +5,11 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Suspense } from 'react';
 
-import styles from "@/styles/page.module.css"
-import { getCardData } from '@/lib/cardData';
+import { getCardData } from '@/libr/cardData';
+import { CardData } from '@/types/interfaces';
 
-interface CardData {
-  index: string;
-  field: string;
-  description: string;
-  link: string;
-}
+import styles from "@/styles/page.module.css"
+
 
 interface searchBarProps {
   data: CardData[];

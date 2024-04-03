@@ -2,14 +2,9 @@ import styles from "@/styles/page.module.css"
 import MainBodyContainer from "./containers/mainBodyContainer";
 import MainHeader from "./components/header";
 
-import { getCardData } from "@/lib/cardData"
+import { getCardData } from "@/libr/cardData"
+import { CardData } from "@/types/interfaces";
 
-interface CardData {
-  index: string;
-  field: string;
-  description: string;
-  link: string;
-}
 
 export default function Home() {
 
