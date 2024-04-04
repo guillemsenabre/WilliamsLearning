@@ -109,7 +109,7 @@ while enabling z-index
 /*!SECTION */
 
 
-/*
+/* NOTE - styles for a testing "code-like text"
 .code {
   font-weight: 700;
   font-family: var(--font-mono);
@@ -118,9 +118,11 @@ while enabling z-index
 
 /*SECTION - Card container template */
 .grid {
-  margin: 0;
+  margin-top: 5vh;
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
+  grid-template-columns: repeat(4, minmax(24%, auto));
+  column-gap: 1vh;
+  row-gap: 1vh;
   max-width: 100%;
   width: var(--max-width);
 }
