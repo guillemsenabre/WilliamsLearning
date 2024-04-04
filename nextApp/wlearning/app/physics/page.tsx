@@ -18,10 +18,14 @@ const Physics: React.FC = () => {
   const physicsData : CardData = getProperties({ data, index});
 
   return (
-    <main>
-      <MainHeader data = { data }/>
-      <FieldContainer key={physicsData.id} {...physicsData}/>
-    </main>
+    <>
+      <header>
+        <MainHeader data = { data }/>
+      </header>
+      <main>
+        <FieldContainer key={physicsData.id} {...physicsData}/>
+      </main>
+    </>
   );
 }
 

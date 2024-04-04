@@ -15,7 +15,7 @@ export default function Home() {
       <header>
         <MainHeader data = {objData}/>
       </header>
-      <main className={styles.main}>
+      <main>
         <MainBodyContainer data = {objData}/>
       </main>
     </>

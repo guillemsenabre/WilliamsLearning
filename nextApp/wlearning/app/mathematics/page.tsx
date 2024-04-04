@@ -18,10 +18,14 @@ const Maths: React.FC<CardData> = () => {
   const mathData : CardData = getProperties({ data, index});
 
   return (
-    <main>
-      <MainHeader data = { data }/>
-      <FieldContainer key={mathData.id} {...mathData}/>
-    </main>
+    <>
+      <header>
+        <MainHeader data = { data }/>
+      </header>
+      <main>
+        <FieldContainer key={mathData.id} {...mathData}/>
+      </main>
+    </>
   );
 }
 
