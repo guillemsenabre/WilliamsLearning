@@ -18,6 +18,7 @@ const MainHeader: React.FC<MainHeaderProps> = ( {data} ) => {
     <header className={styles.mainHeader}>
       <Link href={"/"}>
         <Image
+          className={styles.logoImage}
           src={logoPic}
           alt="Website Logo"
         />
