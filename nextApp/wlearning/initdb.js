@@ -41,6 +41,56 @@ const data = [
     field: "Geology",
     description: "Geology is the study of the Earth, its composition, structure, and processes.",
     link: "/geology"
+  },
+  {
+    field: "Astrophysics",
+    description: "Astrophysics is the branch of astronomy that deals with the physics of the universe, including the physical properties and processes of celestial objects such as stars, galaxies, and the interstellar medium.",
+    link: "/astrophysics"
+  },
+  {
+    field: "Astronomy",
+    description: "Astronomy is the scientific study of celestial objects such as stars, planets, comets, and galaxies, as well as the phenomena that occur outside the Earth's atmosphere.",
+    link: "/astronomy"
+  },
+  {
+    field: "Environmental Science",
+    description: "Environmental science is the interdisciplinary study of the environment and its interactions with living organisms, ecosystems, and human societies. It encompasses fields such as ecology, climatology, and conservation biology.",
+    link: "/environmental-science"
+  },
+  {
+    field: "Neuroscience",
+    description: "Neuroscience is the scientific study of the nervous system, including its structure, function, development, and pathology. It covers a wide range of topics, from molecular and cellular neuroscience to cognitive and behavioral neuroscience.",
+    link: "/neuroscience"
+  },
+  {
+    field: "Psychology",
+    description: "Psychology is the scientific study of the mind and behavior. It seeks to understand how people think, feel, and act, both individually and in groups.",
+    link: "/psychology"
+  },
+  {
+    field: "Sociology",
+    description: "Sociology is the scientific study of society, including its origins, development, organization, and institutions. It examines social behavior, relationships, and cultural phenomena.",
+    link: "/sociology"
+  },
+  {
+    field: "Anthropology",
+    description: "Anthropology is the study of human societies and cultures, both past and present. It encompasses fields such as archaeology, ethnography, and linguistics.",
+    link: "/anthropology"
+  },
+  {
+    field: "Political Science",
+    description: "Political science is the systematic study of government, politics, and political behavior. It explores the theory and practice of governance, power dynamics, and public policies.",
+    link: "/political-science"
+  },
+  {
+    field: "History",
+    description: "History is the study of the past, including the events, people, societies, and cultures that have shaped human civilization. It seeks to understand and interpret historical evidence to reconstruct and analyze past events.",
+    link: "/history"
+  },
+  {
+    field: "Economics",
+    description: "Economics is the social science that studies how individuals, businesses, governments, and societies allocate scarce resources to satisfy their unlimited wants. It examines the production, distribution, and consumption of goods and services.",
+    link: "/economics"
   }
 ];
 

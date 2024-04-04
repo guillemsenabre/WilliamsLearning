@@ -32,7 +32,7 @@
 
 .searchBar {
   position: relative;
-  margin-right: 20vw;
+  margin-right: 27.5vw;
   height: 7.5vh;  
   width: 45vw;
   outline: none; /* Removes hoverihg outline*/
@@ -43,6 +43,7 @@
   border: none;
   padding: 0;
   padding-left: 2vw;
+  padding-right: 2vw;
   box-shadow: 0vh 0vh 0vh var(--background-medium-hex);
   z-index: 1;
   transition:
