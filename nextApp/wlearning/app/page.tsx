@@ -11,9 +11,13 @@ export default function Home() {
   const objData : CardData[] = getCardData();
 
   return (
-    <main className={styles.main}>
-      <MainHeader data = {objData}/>
-      <MainBodyContainer data = {objData}/>
-    </main>
+    <>
+      <header>
+        <MainHeader data = {objData}/>
+      </header>
+      <main className={styles.main}>
+        <MainBodyContainer data = {objData}/>
+      </main>
+    </>
   );
 }
