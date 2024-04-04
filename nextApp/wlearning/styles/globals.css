@@ -12,12 +12,12 @@
   --card-border-rgb: 200, 200, 200; /* Border color for card elements */
 
   --background-black-hex: #000000;
-  --background-darker-hex: #0c0c0cff;
-  --background-dark-hex: #131313ff;
+  --background-darker-hex: #0c0c0c;
+  --background-dark-hex: #131313;
   --background-medium-hex: #1e1f20; /*used in the searchBar*/
-  --eerie-black: #171717ff;
-  --eerie-black-2: #222222ff;
-  --jet: #2c2c2cff;
+  --eerie-black: #171717;
+  --eerie-black-2: #222222;
+  --jet: #2c2c2c;
 }
 
 /* 
