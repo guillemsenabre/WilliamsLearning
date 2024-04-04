@@ -2,7 +2,7 @@
 // Can't use backend services such as databases and more
 'use client';
 
-import { useState } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 
 import { CardData } from '@/types/interfaces';
@@ -22,6 +22,23 @@ const SearchBar: React.FC<searchBarProps> = ({ data }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [inputValue, setInputValue] = useState("");
   const router = useRouter();
+
+  /* NOTE - Furhter functionality 
+  -> Display dropdown list only when input box is selected **NOT WORKING YET
+
+  const [inputSelected, setInputSelected] = useState(false);
+
+  // Reference to input box, to add onFocus effects
+  const ref = useRef(null);
+
+  useEffect(() => {
+    if (document.activeElement === ref.current) {
+      setInputSelected(true);
+    } else {
+      setInputSelected(false);
+    }
+  }, []);
+  */
 
 
   /*NOTE - DROPDOWN FILTERING LOGIC
@@ -89,7 +106,7 @@ const SearchBar: React.FC<searchBarProps> = ({ data }) => {
             }}
           />
         </div>
-        {filteredFields.length > 0 &&  (
+        {filteredFields.length > 0 && (
           <ul className={styles.suggestionsList}>
             {filteredFields.map((field) => (
               <li key={field.field}>
