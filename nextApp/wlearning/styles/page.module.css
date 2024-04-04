@@ -29,6 +29,7 @@
 
 .searchBar {
   position: relative;
+  margin-right: 20vw;
   height: 7.5vh;  
   width: 45vw;
   outline: none; /* Removes hoverihg outline*/

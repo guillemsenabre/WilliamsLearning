@@ -23,7 +23,6 @@ const MainHeader: React.FC<MainHeaderProps> = ( {data} ) => {
         />
       </Link>
       <SearchBar data = {data}/>
-      <h3>Log In button</h3>
     </header>
   );
 }
