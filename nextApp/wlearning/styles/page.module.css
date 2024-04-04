@@ -70,7 +70,10 @@ while enabling z-index
   list-style: none;
   width: 45vw;
   z-index: 0;
-  padding-top: 3.75vh;
+  padding-top: 5vh;
+  border-right: solid rgba(var(--card-border-rgb), 0.25) 1px;
+  border-left: solid rgba(var(--card-border-rgb), 0.25) 1px;
+  border-bottom: solid rgba(var(--card-border-rgb), 0.25) 1px;
   border-bottom-left-radius: 1vh;
   border-bottom-right-radius: 1vh;
   background-color: var(--background-medium-hex);
@@ -91,7 +94,8 @@ while enabling z-index
   padding: 5px 10px;
   color: rgba(var(--foreground-rgb));
   border: none;
-  border-radius: 1vh;
+  border-bottom-left-radius: 1vh;
+  border-bottom-right-radius: 1vh;
   background-color: transparent;
   cursor: pointer;
   text-align: left;
