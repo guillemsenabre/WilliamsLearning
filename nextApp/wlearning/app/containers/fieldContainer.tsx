@@ -19,7 +19,6 @@ const FieldContainer: React.FC<CardData> = ({ id, field, description, link }) =>
       <div className={styles.fieldMain}>
         <h1 id="title">{ field }</h1>
         <div className={styles.fieldSection}>
-          <h2 id="subtitle">Introduction</h2>
           <p>
             { description }
           </p>

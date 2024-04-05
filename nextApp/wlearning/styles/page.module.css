@@ -188,28 +188,27 @@ while enabling z-index
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 2fr 7fr;
 }
 
-.fieldMenu {
-  width: 100%;
-  height: 100%;
-  border-right: 1px solid white;
-}
+/*!SECTION */
+
+/*SECTION - Main content styles */
 
 .fieldMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
   height: 100%;
+  border-left: solid rgba(var(--card-border-rgb), 0.25) 1px;
 }
 
-.fieldMenu h1,
 .fieldMain h1 {
+  width: 80%;
   text-align: center;
-  margin-top: 2vh;
-}
-
-.fieldMain h2 {
-  text-align: center;
+  padding-top: 4vh;
+  border-bottom: solid rgba(var(--card-border-rgb), 0.25) 1px;
 }
 
 .fieldMain p {
@@ -218,8 +217,10 @@ while enabling z-index
 }
 
 .fieldSection {
+  width: 80%;
+  margin-top: 5vh;
   border-radius: 5px;
-  border: 1px solid white;
+  border: solid rgba(var(--card-border-rgb), 0.25) 1px;
 }
 
 .editBtn {
@@ -227,3 +228,18 @@ while enabling z-index
   justify-content: right;
 }
 
+/*!SECTION */
+
+/* SECTION - INDEX (MENU) NAV BAR */
+
+.fieldMenu {
+  width: 100%;
+  height: 100%;
+}
+
+.fieldMenu h1 {
+  text-align: center;
+  padding-top: 4vh;
+}
+
+/*!SECTION */
