@@ -212,6 +212,7 @@ while enabling z-index
   border-bottom: solid rgba(var(--card-border-rgb), 0.25) 1px;
 }
 
+/* Mind Map styles for each page*/
 .mindMapContainer {
   width: 80%;
   height: 100%;
