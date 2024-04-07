@@ -9,16 +9,11 @@ function BionicText(text:string) {
     // word length
     const wlen: number = word.length;
 
-    // Bold limiters
-    const threshold_3: number = 3;
-    const threshold_5: number = 5;
-    const threshold_7: number = 7;
-
-    if (wlen > threshold_3 && wlen <= threshold_5) {
+    if (wlen > 3 && wlen <= 5) {
       return `<b>${word.slice(0,2)}</b>${word.slice(2)}`;
-    } else if (wlen > threshold_5 && wlen <= threshold_7) {
+    } else if (wlen > 5 && wlen <= 7) {
       return `<b>${word.slice(0,3)}</b>${word.slice(3)}`;
-    } else if (wlen > threshold_7) {
+    } else if (wlen > 7) {
       return `<b>${word.slice(0,4)}</b>${word.slice(4)}`;
     } else {
       return word;
