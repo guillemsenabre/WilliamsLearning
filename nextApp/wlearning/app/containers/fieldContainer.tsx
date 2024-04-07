@@ -31,9 +31,7 @@ const FieldContainer: React.FC<CardData> = ({ field, description, field_mindmap_
       <div className={styles.fieldMain}>
         <h1 id="title">{ field }</h1>
         <div className={styles.fieldSection}>
-          <p>
           <p dangerouslySetInnerHTML={{ __html: bionicDescription }} />
-          </p>
         </div>
         <div className={styles.mindMapContainer}>
           <Image
