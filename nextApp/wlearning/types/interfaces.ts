@@ -3,6 +3,7 @@ export interface CardData {
   field: string;
   description: string;
   link: string;
+  field_mindmap_path: string;
 }
 
 export interface FieldMenuItem {
