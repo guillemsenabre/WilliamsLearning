@@ -1,6 +1,5 @@
 // Next & React components
 import Image from "next/image";
-import { render } from "react-dom";
 
 // Styles
 import styles from "@/styles/page.module.css"
