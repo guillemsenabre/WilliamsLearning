@@ -235,7 +235,6 @@ while enabling z-index
   width: 80%;
   margin-top: 5vh;
   border-radius: 5px;
-  border: solid rgba(var(--card-border-rgb), 0.25) 1px;
 }
 
 .editBtn {
