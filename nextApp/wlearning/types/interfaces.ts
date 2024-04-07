@@ -4,6 +4,7 @@ export interface CardData {
   description: string;
   link: string;
   field_mindmap_path: string;
+  introduction: string;
 }
 
 export interface FieldMenuItem {

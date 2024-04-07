@@ -15,7 +15,7 @@ import { CardData } from "@/types/interfaces";
 import { FieldMenuItem } from "@/types/interfaces";
 
 
-const FieldContainer: React.FC<CardData> = ({ field, description, field_mindmap_path }) => {  
+const FieldContainer: React.FC<CardData> = ({ field, introduction, field_mindmap_path }) => {  
   
   const toFieldMenu: FieldMenuItem = {
       title: field,
@@ -23,7 +23,7 @@ const FieldContainer: React.FC<CardData> = ({ field, description, field_mindmap_
   }
 
   // process text into Bionic text -> bold words' start
-  const bionicDescription: string = BionicText(description);
+  const bionicDescription: string = BionicText(introduction);
 
   return (
     <div className={styles.fieldContainer}>
