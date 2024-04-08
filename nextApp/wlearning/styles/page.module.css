@@ -2,7 +2,7 @@
 
 .mainHeader {
   position: fixed;
-  background-color: var(--background-darker-hex);
+  backdrop-filter: blur(10px);
   top: 0;
   z-index: 3;
   display: flex;
@@ -40,7 +40,7 @@
   color: #acb0b4;
   font-size: 2.5vh;
   border-radius: 6vh;
-  border: none;
+  border: solid rgba(var(--card-border-rgb), 0.25) 1px;
   padding: 0;
   padding-left: 2vw;
   padding-right: 2vw;
