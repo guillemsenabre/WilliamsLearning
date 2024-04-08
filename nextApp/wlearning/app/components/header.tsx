@@ -16,14 +16,12 @@ interface MainHeaderProps {
 const MainHeader: React.FC<MainHeaderProps> = ( {data} ) => {
   return (
     <header className={styles.mainHeader}>
-      <Link href={"/"}>
-        <div className={styles.logoImageContainer}>
-          <Image
-            className={styles.logoImage}
-            src={logoPic}
-            alt="Website Logo"
-          />
-        </div>
+      <Link href={"/"} className={styles.logoImageContainer}>
+        <Image
+          className={styles.logoImage}
+          src={logoPic}
+          alt="Website Logo"
+        />
       </Link>
       <SearchBar data = {data}/>
     </header>
