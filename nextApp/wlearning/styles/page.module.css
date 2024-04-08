@@ -29,8 +29,8 @@
 
 .logoImage {
   margin-left: 3vw;
-  width: 15vh;
-  height: 15vh;
+  width: 10vh;
+  height: 10vh;
   transition: transform 0.5s ease-in-out;
 }
 
