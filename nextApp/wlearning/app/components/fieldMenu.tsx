@@ -5,7 +5,7 @@ import styles from "@/styles/page.module.css"
 import { FieldMenuItem } from "@/types/interfaces";
 
 
-const FieldMenu: React.FC<FieldMenuItem> = ({ title, subtitle }) => {
+const FieldMenu: React.FC<FieldMenuItem> = ({ title, subtitle1, subtitle2 }) => {
   
   // Scroll into specific view (not dynamic yet)
   const handleScrollTo = ( id: string ) => {
@@ -23,7 +23,10 @@ const FieldMenu: React.FC<FieldMenuItem> = ({ title, subtitle }) => {
           <a onClick={() => handleScrollTo("title")}><h2>{ title }</h2></a>
         </li>
         <li>
-          <a onClick={() => handleScrollTo("subtitle")}><h3>{ subtitle }</h3></a>
+          <a onClick={() => handleScrollTo("subtitle")}><h3>{ subtitle1 }</h3></a>
+        </li>
+        <li> 
+          <a onClick={() => handleScrollTo("mindmap")}><h3>{ subtitle2 }</h3></a>
         </li>
       </ul>
   </div>

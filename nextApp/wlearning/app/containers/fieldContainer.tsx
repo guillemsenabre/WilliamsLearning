@@ -19,7 +19,8 @@ const FieldContainer: React.FC<CardData> = ({ field, introduction, field_mindmap
   
   const toFieldMenu: FieldMenuItem = {
       title: field,
-      subtitle: 'Introduction',
+      subtitle1: 'Introduction',
+      subtitle2: 'Mind Map'
   }
 
   // process text into Bionic text -> bold words' start
@@ -33,6 +34,7 @@ const FieldContainer: React.FC<CardData> = ({ field, introduction, field_mindmap
         <div className={styles.fieldSection}>
           <p dangerouslySetInnerHTML={{ __html: bionicDescription }} />
         </div>
+        <h2 id="mindmap">Mind Map</h2>
         <div className={styles.mindMapContainer}>
           <Image
             className={styles.fieldMainMM}

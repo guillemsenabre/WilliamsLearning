@@ -208,6 +208,7 @@ while enabling z-index
 /*SECTION - Main content styles */
 
 .fieldMain {
+  grid-column: 2 / span 2;
   display: flex;
   flex-direction: column;
   row-gap: 5vh;
@@ -217,11 +218,19 @@ while enabling z-index
   border-left: solid rgba(var(--card-border-rgb), 0.25) 1px;
 }
 
+
 .fieldMain h1 {
   width: 80%;
-  text-align: center;
-  padding-top: 4vh;
-  border-bottom: solid rgba(var(--card-border-rgb), 0.25) 1px;
+  text-align: left;
+  margin-top: 8vh;
+  font-size: 7vh;
+}
+
+.fieldMain h2 {
+  width: 80%;
+  text-align: left;
+  margin-top: 8vh;
+  font-size: 5vh;
 }
 
 /* Mind Map styles for each page*/
@@ -245,7 +254,6 @@ while enabling z-index
 
 .fieldSection {
   width: 80%;
-  margin-top: 5vh;
   border-radius: 5px;
 }
 
@@ -264,8 +272,11 @@ while enabling z-index
 /* SECTION - INDEX (MENU) NAV BAR */
 
 .fieldMenu {
-  width: 100%;
-  height: 100%;
+  position: fixed;
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 1;
+  left: 0;
+  overflow-y: auto;
 }
 
 .fieldMenu h1 {

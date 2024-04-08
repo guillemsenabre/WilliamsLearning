@@ -9,5 +9,6 @@ export interface CardData {
 
 export interface FieldMenuItem {
   title: string;
-  subtitle?: string;
+  subtitle1?: string;
+  subtitle2?: string;
 }
