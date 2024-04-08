@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import styles from "@/styles/page.module.css"
-import logoPic from "@/public/wslogo.png"
+import logoPic from "@/public/wslogo3.png"
 
 import SearchBar from "./searchBar";
 
@@ -17,11 +17,13 @@ const MainHeader: React.FC<MainHeaderProps> = ( {data} ) => {
   return (
     <header className={styles.mainHeader}>
       <Link href={"/"}>
-        <Image
-          className={styles.logoImage}
-          src={logoPic}
-          alt="Website Logo"
-        />
+        <div className={styles.logoImageContainer}>
+          <Image
+            className={styles.logoImage}
+            src={logoPic}
+            alt="Website Logo"
+          />
+        </div>
       </Link>
       <SearchBar data = {data}/>
     </header>
