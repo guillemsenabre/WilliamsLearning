@@ -9,7 +9,10 @@ function BionicText(text:string) {
     // word length
     const wlen: number = word.length;
 
-    if (wlen > 3 && wlen <= 5) {
+    // NOTE - Could be converted to a math series function to improve O()
+    if (wlen > 1 && wlen <= 3) {
+      return `<b>${word.slice(0,1)}</b>${word.slice(1)}`;
+    } else if (wlen > 3 && wlen <= 5) {
       return `<b>${word.slice(0,2)}</b>${word.slice(2)}`;
     } else if (wlen > 5 && wlen <= 7) {
       return `<b>${word.slice(0,3)}</b>${word.slice(3)}`;
