@@ -14,5 +14,13 @@
 
 ### Bionic Text
 
+**Bionic text** refers to a reading technique where the initial letters of words are bolded to facilitate faster reading comprehension. This method, also known as **bionic reading**, is particularly beneficial for individuals with ADHD. By emphasizing the beginnings of words, **bionic text** aims to improve focus and understanding, making it easier for the brain to process information. 
 
-This section on bionic text has been added using a custom processor function, enhancing the document with dynamic content.
+In **this project** bionic text has been applied using custom **typescript** functions and processors that can be found in `wlearning\app\scripts\bionicText.ts`.
+
+Some advantages of **bionic text** include:
+
+- **Enhanced** engagement: Readers can quickly grasp the main points of the text, leading to increased engagement and retention.
+- **Improved** comprehension: Bolded beginnings help readers to better comprehend the content by providing visual cues for important words.
+- **Increased** reading speed: By focusing on the bolded letters, readers can read more efficiently, thereby speeding up their overall reading pace.
+- **Assistance** for ADHD individuals: **Bionic text** offers a supportive reading method for individuals with ADHD, aiding in concentration and reducing distractions.
