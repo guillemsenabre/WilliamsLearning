@@ -17,7 +17,7 @@ const FieldMenu: React.FC<FieldMenuItem> = ({ title, subtitle1, subtitle2 }) => 
 
   return (
     <div className={styles.fieldMenu}>
-      <h1>Index</h1>
+      <p>IN THIS ARTICLE</p>
       <ul>
         <li>
           <a onClick={() => handleScrollTo("title")}><h2>{ title }</h2></a>
