@@ -10,15 +10,9 @@
 
 ### A preview with a test page
 
-
+<img width="960" alt="image" src="https://github.com/guillemsenabre/WilliamsLearning/assets/108484177/ede84a65-c440-428f-b293-4bd6a4f7f598">
 
 ### Bionic Text
 
-Bionic text is a concept that integrates human-like characteristics into text, often through natural language processing (NLP) and artificial intelligence (AI) technologies. Some advantages of bionic text include:
-
-- Enhanced engagement: Bionic text can mimic human conversation, making it more engaging and relatable to users.
-- Personalization: By analyzing user data and behavior, bionic text can tailor content to individual preferences.
-- Automation: Bionic text can automate repetitive tasks such as customer support, freeing up human resources for more complex endeavors.
-- Improved efficiency: With the ability to understand context and intent, bionic text can streamline communication processes.
 
 This section on bionic text has been added using a custom processor function, enhancing the document with dynamic content.
