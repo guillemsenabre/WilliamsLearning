@@ -1,6 +1,6 @@
 # WilliamsLearning
 
----
+
 
 ### Frameworks and tools used:
 
@@ -23,7 +23,8 @@
 
 ### A preview with a test page
 
-<img width="960" alt="image" src="https://github.com/guillemsenabre/WilliamsLearning/assets/108484177/ede84a65-c440-428f-b293-4bd6a4f7f598">
+<img width="955" alt="image" src="https://github.com/guillemsenabre/WilliamsLearning/assets/108484177/13cbca5c-c32b-4fd3-8cfa-b5cc2227856f">
+
 
 
 ---
