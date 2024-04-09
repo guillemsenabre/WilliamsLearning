@@ -19,8 +19,8 @@ const FieldContainer: React.FC<CardData> = ({ field, introduction, field_mindmap
   
   const toFieldMenu: FieldMenuItem = {
       title: field,
-      subtitle1: 'Introduction',
-      subtitle2: 'Mind Map'
+      subtitle1: 'INTRODUCTION',
+      subtitle2: 'MINDMAP'
   }
 
   // process text into Bionic text -> bold words' start

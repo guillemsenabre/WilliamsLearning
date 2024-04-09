@@ -284,20 +284,29 @@ while enabling z-index
   overflow-y: auto; 
 }
 
+.fieldMenu h2 {
+  font-size: 4vh;
+  font-weight: lighter;
+  margin-bottom: 2vh;
+}
+
+.fieldMenu h3 {
+  font-size: 2.5vh;
+  font-weight: lighter;
+}
+
 .fieldMenu p {
   margin-bottom: 5vh;
 }
 
 .fieldMenu ul {
   list-style: none; /* Remove default bullet points */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
   border-left: solid var(--background-medium-hex) 2px;
 }
 
 .fieldMenu li {
-  margin-bottom: 10px; /* Add space between list items */
-  /* Added from creative approach */
+  margin-bottom: 2vh;
+  margin-left: 2vh;
   display: flex; /* Allow side-by-side positioning */
   align-items: center; /* Align content vertically */
 }
