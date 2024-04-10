@@ -11,4 +11,5 @@ export interface FieldMenuItem {
   title: string;
   subtitle1?: string;
   subtitle2?: string;
+  subtitle3?: string;
 }

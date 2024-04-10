@@ -20,7 +20,8 @@ const FieldContainer: React.FC<CardData> = ({ field, description, field_mindmap_
   const toFieldMenu: FieldMenuItem = {
       title: field,
       subtitle1: 'MINDMAP',
-      subtitle2: 'INTRODUCTION'
+      subtitle2: 'DESCRIPTION',
+      subtitle3: 'SUB FIELDS'
   }
 
   // process text into Bionic text -> bold words' start
@@ -45,9 +46,13 @@ const FieldContainer: React.FC<CardData> = ({ field, description, field_mindmap_
             height={600}
           />
         </div>
-        <h2 id="introduction"> Introduction </h2>
+        <h2 id="description"> Description </h2>
         <div className={styles.fieldSection}>
           <p dangerouslySetInnerHTML={{ __html: bionicIntroduction }} />
+        </div>
+        <h2 id="subFields"> Sub fields </h2>
+        <div className={styles.fieldSection}>
+          <p> Sub fields will be displayed here as clickable cards</p>
         </div>
       </div>
     </div>
