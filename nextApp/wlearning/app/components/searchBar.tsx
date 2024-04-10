@@ -47,11 +47,6 @@ const SearchBar: React.FC<searchBarProps> = ({ data }) => {
   the input. If it is null/none, assigns null/false to filteredFields.
   */
 
-  console.log('CARD DATA', cardData);
-  console.log('DATA LENGTH', cardData.length);
-  console.log('DATA LENGTH', typeof cardData);
-
-
   const filteredFields = cardData.filter((card) =>
     searchTerm ? 
     card.field.toLowerCase()?.startsWith(searchTerm.toLowerCase()) :
