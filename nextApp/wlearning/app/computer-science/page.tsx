@@ -11,7 +11,7 @@ import { CardData } from "@/types/interfaces";
 const ComputerScience: React.FC<CardData> = () => {
 
   // identifier to extract physics data from sqlite3 database
-  const slug: string | undefined = '/physics';
+  const slug: string | undefined = '/computer-science';
 
   // Here we use type casting since we are sure that `getCardData()` will
   //return an array if no filter (slug) is provided and an object if it is.
