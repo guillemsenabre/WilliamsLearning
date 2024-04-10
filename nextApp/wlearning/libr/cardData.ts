@@ -5,18 +5,22 @@ import { CardData } from "@/types/interfaces";
 
 const db = sql('data.db');
 
-export function getCardData(filter?: string): CardData[] {
+export function getCardData(filter?: string): CardData[] | CardData {
 
   // Select ALL rows in the database
-  let sql = `SELECT * FROM data`
+  let sqlQuery = `SELECT * FROM data`;
 
+  console.log('QUERY BEFORE FILTER', sqlQuery);
   // If a filter is provided, select only the row that matches it
   if (filter) {
-    sql += `WHERE slug = ?`;
+    sqlQuery += ` WHERE slug = ?`;
+    return db.prepare(sqlQuery).get(filter) as CardData;
   }
 
+  console.log('QUERY AFTER FILTER', sqlQuery);  
+
   // sql will place `filter` instead of `?` as it is the placeholder
-  const data = db.prepare(sql).all(filter) as CardData[];
+  const data = db.prepare(sqlQuery).all() as CardData[];
 
   return data;
 }

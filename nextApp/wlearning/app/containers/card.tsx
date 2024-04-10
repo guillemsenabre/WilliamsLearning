@@ -5,12 +5,12 @@ import { CardData } from "@/types/interfaces";
 
 
 
-const Card: React.FC<CardData> = ({ field, description, link }) => {
+const Card: React.FC<CardData> = ({ field, description, slug }) => {
   return (
     <div className={styles.card}>
       <Link 
         href={{ 
-          pathname: `${link}`
+          pathname: `${slug}`
           // Alternative approach to find right field
           //query: {index: `${id}`}
           }}

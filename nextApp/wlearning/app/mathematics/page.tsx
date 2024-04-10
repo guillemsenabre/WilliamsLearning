@@ -13,9 +13,13 @@ import { CardData } from "@/types/interfaces";
 
 const Maths: React.FC<CardData> = () => {
 
-  const index : string = '1';
-  const data: CardData[] = getCardData();
-  const mathData : CardData = getProperties({ data, index});
+  const slug: string | undefined = '/mathematics';
+
+  // Here we use type casting since we are sure that `getCardData()` will
+  //return an array if no filter (slug) is provided and an object if it is.
+  const data = getCardData() as CardData[];
+  const mathData = getCardData(slug) as CardData;
+  //const mathData : CardData = getProperties({ data, index});
 
   return (
     <>

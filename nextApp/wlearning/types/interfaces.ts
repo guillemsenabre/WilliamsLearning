@@ -2,7 +2,7 @@ export interface CardData {
   id: string;
   field: string;
   description: string;
-  link: string;
+  slug: string;
   field_mindmap_path: string;
   introduction: string;
 }
