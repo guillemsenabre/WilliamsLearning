@@ -15,16 +15,17 @@ import { CardData } from "@/types/interfaces";
 import { FieldMenuItem } from "@/types/interfaces";
 
 
-const FieldContainer: React.FC<CardData> = ({ field, introduction, field_mindmap_path }) => {  
+const FieldContainer: React.FC<CardData> = ({ field, description, field_mindmap_path, introduction }) => {  
   
   const toFieldMenu: FieldMenuItem = {
       title: field,
-      subtitle1: 'INTRODUCTION',
-      subtitle2: 'MINDMAP'
+      subtitle1: 'MINDMAP',
+      subtitle2: 'INTRODUCTION'
   }
 
   // process text into Bionic text -> bold words' start
-  const bionicDescription: string = BionicText(introduction);
+  const bionicDescription: string = BionicText(description);
+  const bionicIntroduction: string = BionicText(introduction);
 
   return (
     <div className={styles.fieldContainer}>
@@ -43,6 +44,10 @@ const FieldContainer: React.FC<CardData> = ({ field, introduction, field_mindmap
             width={800}
             height={600}
           />
+        </div>
+        <h2 id="introduction"> Introduction </h2>
+        <div className={styles.fieldSection}>
+          <p dangerouslySetInnerHTML={{ __html: bionicIntroduction }} />
         </div>
       </div>
     </div>

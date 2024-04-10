@@ -23,10 +23,10 @@ const FieldMenu: React.FC<FieldMenuItem> = ({ title, subtitle1, subtitle2 }) => 
           <a onClick={() => handleScrollTo("title")}><h2>{ title }</h2></a>
         </li>
         <li>
-          <a onClick={() => handleScrollTo("subtitle")}><h3>{ subtitle1 }</h3></a>
+          <a onClick={() => handleScrollTo("mindmap")}><h3>{ subtitle1 }</h3></a>
         </li>
         <li> 
-          <a onClick={() => handleScrollTo("mindmap")}><h3>{ subtitle2 }</h3></a>
+          <a onClick={() => handleScrollTo("introduction")}><h3>{ subtitle2 }</h3></a>
         </li>
       </ul>
   </div>
