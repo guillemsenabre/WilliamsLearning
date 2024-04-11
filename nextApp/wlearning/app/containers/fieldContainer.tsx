@@ -62,9 +62,7 @@ const FieldContainer: React.FC<CardData> = ({ field, description, field_mindmap_
         <h2 id="subFields"> Sub fields </h2>
         <div className={styles.grid}>
           {subFieldsArray.map((subField) => (
-            <div>
-              <Card field = {subField}/>
-            </div>
+            <Card field = {subField}/>
           ))}
         </div>
       </div>
