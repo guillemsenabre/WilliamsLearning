@@ -1,11 +1,11 @@
 import styles from "@/styles/page.module.css"
 import Link from 'next/link'
 
-import { CardData } from "@/types/interfaces";
+import { CardDataitem } from "@/types/interfaces";
 
 
 
-const Card: React.FC<CardData> = ({ field, description, slug }) => {
+const Card: React.FC<CardDataitem> = ({ field, description, slug }) => {
   return (
     <div className={styles.card}>
       <Link 
