@@ -45,7 +45,7 @@ const FieldContainer: React.FC<CardData> = ({ field, description, field_mindmap_
         <div className={styles.fieldSection}>
           <p dangerouslySetInnerHTML={{ __html: bionicDescription }} />
         </div>
-        <h2 id="mindmap">Mind Map</h2>
+        <h2 id="mindmap">MIND MAP</h2>
         <div className={styles.mindMapContainer}>
           <Image
             className={styles.fieldMainMM}
@@ -55,11 +55,11 @@ const FieldContainer: React.FC<CardData> = ({ field, description, field_mindmap_
             height={600}
           />
         </div>
-        <h2 id="description"> Description </h2>
+        <h2 id="description"> DESCRIPTION </h2>
         <div className={styles.fieldSection}>
           <p dangerouslySetInnerHTML={{ __html: bionicIntroduction }} />
         </div>
-        <h2 id="subFields"> Sub fields </h2>
+        <h2 id="subFields"> SUB FIELDS </h2>
         <div className={styles.grid}>
           {subFieldsArray.map((subField) => (
             <Card field = {subField}/>
