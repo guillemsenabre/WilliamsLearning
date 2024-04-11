@@ -14,7 +14,6 @@ import BionicText from "../scripts/bionicText";
 // Data structure and types
 import { CardData } from "@/types/interfaces";
 import { FieldMenuItem } from "@/types/interfaces";
-import { CardDataitem } from "@/types/interfaces";
 
 
 const FieldContainer: React.FC<CardData> = ({ field, description, field_mindmap_path, introduction, childs }) => {  
@@ -26,16 +25,14 @@ const FieldContainer: React.FC<CardData> = ({ field, description, field_mindmap_
       subtitle3: 'SUB FIELDS'
   }
 
-  const toCard: CardDataitem = {
-    field: childs 
-  }
-
   // process text into Bionic text -> bold words' start
   const bionicDescription: string = BionicText(description);
   const bionicIntroduction: string = BionicText(introduction);
   
   // Extracting and separating sub field values in an array
-  const subFieldsArray: string[] = childs.split(',');
+  
+  const subFieldsArray: string[] = childs ? childs.split(',') : [];
+  
 
   return (
     <div className={styles.fieldContainer}>
@@ -59,12 +56,16 @@ const FieldContainer: React.FC<CardData> = ({ field, description, field_mindmap_
         <div className={styles.fieldSection}>
           <p dangerouslySetInnerHTML={{ __html: bionicIntroduction }} />
         </div>
-        <h2 id="subFields"> SUB FIELDS </h2>
-        <div className={styles.grid}>
-          {subFieldsArray.map((subField) => (
-            <Card field = {subField}/>
-          ))}
-        </div>
+        { subFieldsArray && (
+          <>
+            <h2 id="subFields"> SUB FIELDS </h2>
+            <div className={styles.grid}>
+              {subFieldsArray.map((subField) => (
+                <Card key = {subField} field = {subField}/>
+              ))}
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
