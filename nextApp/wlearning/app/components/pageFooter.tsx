@@ -15,12 +15,11 @@ interface AuthorInfo {
 const PageFooter: React.FC = () => {
   const authorInfo: AuthorInfo = {
     name: "Guillem Senabre",
-    githubUrl: "https://github.com/guillemsenabre",
+    githubUrl: "https://github.com/guillemsenabre/WilliamsLearning",
   };
 
   return (
     <div className={styles.pageFooterContainer}>
-      <p>Author: {authorInfo.name}</p>
       <Link href={authorInfo.githubUrl}>
         <Image
           className={styles.gitIcon}
