@@ -1,5 +1,7 @@
+// Custom Components imports
 import MainHeader from "@/app/components/header";
 import FieldContainer from "@/app/containers/fieldContainer";
+import PageFooter from "@/app/components/pageFooter";
 
 // Get data from sqlite3
 import { getCardData } from "@/libr/cardData";
@@ -25,6 +27,7 @@ const ComputerScience: React.FC<CardData> = () => {
       </header>
       <main>
         <FieldContainer key={computerScienceData.id} {...computerScienceData}/>
+        <PageFooter/>
       </main>
     </>
   );
