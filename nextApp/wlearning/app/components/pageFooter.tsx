@@ -1,18 +1,36 @@
-import styles from "@/styles/page.module.css"
+import Link from "next/link";
+import Image from "next/image";
+
+import styles from "@/styles/page.module.css";
+
+// Import github logo from public directory
+import ghIcon from "@/public/ghicon.png"
 
 
-const PageFooter: React.FC = () => {
-  return (
-    <div className={styles.pageFooterContainer}>
-      <h2>
-        Author: Guillem Senabre
-      </h2>
-      <h2>
-        hey2
-      </h2>
-    </div>
-  )
+interface AuthorInfo {
+  name: string;
+  githubUrl: string;
 }
 
+const PageFooter: React.FC = () => {
+  const authorInfo: AuthorInfo = {
+    name: "Guillem Senabre",
+    githubUrl: "https://github.com/guillemsenabre",
+  };
+
+  return (
+    <div className={styles.pageFooterContainer}>
+      <p>Author: {authorInfo.name}</p>
+      <Link href={authorInfo.githubUrl}>
+        <Image
+          className={styles.gitIcon}
+          src={ghIcon}
+          alt="git icon"
+        />
+      </Link>
+      <p>© 2024 {authorInfo.name}. Licensed under the Apache License, Version 2.0.</p>
+    </div>
+  );
+};
 
 export default PageFooter;

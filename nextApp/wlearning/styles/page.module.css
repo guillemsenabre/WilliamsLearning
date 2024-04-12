@@ -337,6 +337,8 @@ while enabling z-index
 /* SECTION - Footer styles */
 
 .pageFooterContainer {
+  margin-left: 20vw;
+  margin-right: 20vw;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -346,3 +348,13 @@ while enabling z-index
   border-top: solid rgba(var(--card-border-rgb), 0.25) 1px;
   background-color: var(--background-darker-hex);
 }
+
+.pageFooterContainer p {
+  margin: 5vw;
+}
+
+.gitIcon {
+  height: 4vh;
+  width: 4vh;
+}
+
