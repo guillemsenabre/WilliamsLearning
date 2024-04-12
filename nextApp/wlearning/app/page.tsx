@@ -1,6 +1,6 @@
-import styles from "@/styles/page.module.css"
 import MainBodyContainer from "./containers/mainBodyContainer";
 import MainHeader from "./components/header";
+import PageFooter from "./components/pageFooter";
 
 import { getCardData } from "@/libr/cardData"
 import { CardData } from "@/types/interfaces";
@@ -21,6 +21,7 @@ export default function Home() {
       </header>
       <main>
         <MainBodyContainer data = {objData}/>
+        <PageFooter/>
       </main>
     </>
   );

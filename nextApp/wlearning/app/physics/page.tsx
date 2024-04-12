@@ -1,5 +1,6 @@
 import MainHeader from "@/app/components/header";
 import FieldContainer from "@/app/containers/fieldContainer";
+import PageFooter from "../components/pageFooter";
 
 // Get data from sqlite3
 import { getCardData } from "@/libr/cardData";
@@ -25,6 +26,7 @@ const Physics: React.FC = () => {
       </header>
       <main>
         <FieldContainer key={physicsData.id} {...physicsData}/>
+        <PageFooter/>
       </main>
     </>
   );
