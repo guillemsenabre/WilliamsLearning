@@ -7,9 +7,7 @@ import { CardData } from "@/types/interfaces";
 
 
 export default function Home() {
-
-  let filter: string | undefined = '';
-
+  
   // Here we use type casting since we are sure that `getCardData()` will
   //return an array if no filter (slug) is provided and an object if it is.
   const objData = getCardData() as CardData[];
