@@ -2,7 +2,10 @@
 
 .mainHeader {
   position: fixed;
+  background-color: var(--background-darker-hex);
+  /* NOTE - This is a nice blur effect
   backdrop-filter: blur(10px);
+  */
   top: 0;
   z-index: 3;
   display: flex;
@@ -333,10 +336,13 @@ while enabling z-index
 
 /* SECTION - Footer styles */
 
-.pageFooter {
+.pageFooterContainer {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 100vw;
-  height: 30vh;
+  height: 30vh; 
   border-top: solid rgba(var(--card-border-rgb), 0.25) 1px;
-  background-color: var(--background-medium-hex);
+  background-color: var(--background-darker-hex);
 }
