@@ -36,8 +36,6 @@ const FieldContainer: React.FC<CardData> = ({ field, description, field_mindmap_
   // Create a function that takes childs array and returns another array with each childs' slug
   const childSlugsArray: string[] = getChildsSlug(subFieldsArray);
 
-  console.log(childSlugsArray);
-
   return (
     <div className={styles.fieldContainer}>
       <FieldMenu key={toFieldMenu.title} {...toFieldMenu}/>
@@ -64,8 +62,11 @@ const FieldContainer: React.FC<CardData> = ({ field, description, field_mindmap_
           <>
             <h2 id="subFields"> SUB FIELDS </h2>
             <div className={styles.grid}>
-              {subFieldsArray.map((subField) => (
-                <Card key = {subField} field = {subField}/>
+              {subFieldsArray.map((subField, index) => (
+                <Card 
+                  key = {subField} 
+                  field = {subField}
+                  slug = {childSlugsArray[index] || ''}/>
               ))}
             </div>
           </>

@@ -25,14 +25,12 @@ export function getCardData(filter?: string): CardData[] | CardData {
 export function getChildsSlug(childs: string[]) {
   
   let preparedSqlQuery = db.prepare(`SELECT slug FROM data WHERE field = ?`);
-  console.log(childs);
   const results: string[] = [];
 
   childs.forEach(child => {
     const childSlug: string = preparedSqlQuery.get(child) as string;
 
     results.push(childSlug);
-    console.log(results);
   });
 
   return results;
