@@ -10,6 +10,7 @@ import Card from "./card";
 
 // Custom scripts
 import BionicText from "../scripts/bionicText";
+import { getChildsSlug } from "@/libr/cardData";
 
 // Data structure and types
 import { CardData } from "@/types/interfaces";
@@ -30,9 +31,12 @@ const FieldContainer: React.FC<CardData> = ({ field, description, field_mindmap_
   const bionicIntroduction: string = BionicText(introduction);
   
   // Extracting and separating sub field values in an array
-  
   const subFieldsArray: string[] = childs ? childs.split(',') : [];
   
+  // Create a function that takes childs array and returns another array with each childs' slug
+  const childSlugsArray: string[] = getChildsSlug(subFieldsArray);
+
+  console.log(childSlugsArray);
 
   return (
     <div className={styles.fieldContainer}>
