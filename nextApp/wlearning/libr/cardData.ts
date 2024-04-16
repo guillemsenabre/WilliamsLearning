@@ -22,6 +22,7 @@ export function getCardData(filter?: string): CardData[] | CardData {
   return data;
 }
 
+//FIXME - SQLITE3 returns an undefined slug ??
 export function getChildsSlug(childs: string[]) {
   
   let preparedSqlQuery = db.prepare(`SELECT slug FROM data WHERE field = ?`);
